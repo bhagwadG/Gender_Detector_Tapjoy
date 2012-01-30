@@ -20,9 +20,6 @@ class UsersController < ApplicationController
     if @user.gender.blank?
        require './bayes'
        b_obj= Bayes.new()
-        gende = b_obj.predict(@user.height, @user.weight)
-#        render :text => "The object is #{gende}"
-       logger.info "GENDER: #{gende}"
        simp_.gender = b_obj.predict(@user.height, @user.weight)
        predict_(simp_)
     else
