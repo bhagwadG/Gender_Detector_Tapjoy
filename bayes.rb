@@ -18,10 +18,18 @@ class Bayes
   
   # prediction algorithm (compare probabilities generate results)
   def predict(ht,wt)
+    ht =ht.to_i
+    wt =wt.to_i
+    
     arr_w_men   = User.connection.select_values("SELECT weight FROM users WHERE gender='male'")
     arr_h_men   = User.connection.select_values("SELECT height FROM users WHERE gender='male'")
     arr_w_women = User.connection.select_values("SELECT weight FROM users WHERE gender='female'")
     arr_h_women = User.connection.select_values("SELECT height FROM users WHERE gender='female'")
+    
+    arr_w_men 	= arr_w_men.map(&:to_i)
+    arr_h_men 	= arr_h_men.map(&:to_i)
+    arr_w_women = arr_w_women.map(&:to_i)
+    arr_h_women = arr_h_women.map(&:to_i)
     
     # variance and mean calculation for men and women data
     w_var_m,w_mean_m = variance(arr_w_men)

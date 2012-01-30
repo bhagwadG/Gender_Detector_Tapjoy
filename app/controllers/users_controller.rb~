@@ -20,6 +20,7 @@ class UsersController < ApplicationController
     if @user.gender.blank?
        require './bayes'
        b_obj= Bayes.new()
+       simp_.gender=simp_.gender.to_s
        simp_.gender = b_obj.predict(@user.height, @user.weight)
        predict_(simp_)
     else
