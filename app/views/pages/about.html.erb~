@@ -1,0 +1,31 @@
+    <h1>About App</h1>
+    <p>
+      This is a web app which uses the Naive Bayes classifier
+      to predict the gender of a person; given weight and height.
+    </p>
+
+     <p>
+      To use this app click on the 'Train' link and fill in all the
+      data fields (Gender Weight Height) with values for initial
+      training. For best results train for atleast ten examples,
+      with equal distribution of males and females.</br></br>
+
+      To list all the training data you have entered, click on the
+      'List People' link on the top right. It will display all the 
+      data. You can perform actions like edit and delete on these
+      people.
+      
+      </br></br>
+      To test simply leave the gender section empty and fill in the
+      weight and height section and commit. The prediction results 
+      will be displayed.      
+     </p>
+
+      <p>
+      <strong> Format: </strong></br></br>
+
+       Gender : enter either "male" or "female"</br>
+       Weight : enter an integer value. Weight is in lb's</br>
+       Height : enter an integer value. Height is in inches</br>
+      </p>
+

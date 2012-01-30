@@ -1,0 +1,15 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= "Person : #{@user.id}"  %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>Gender</strong> <%= @user.gender %><br />
+      <strong>Weight</strong> <%= "#{@user.weight} pounds" %><br />
+      <strong>Height</strong> <%= "#{@user.height} inches" %><br />
+    </td>
+  </tr>
+</table>

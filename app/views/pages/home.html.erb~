@@ -1,0 +1,11 @@
+    <h1>Gender Detector</h1>
+    <p>
+      This is the home page for the
+      the Gender Detector sysem based on
+      Naive Bayes classifier.
+    </p>
+    <p>
+      To start, press the Train link given below.
+      For further information visit the About page.
+    </p>
+

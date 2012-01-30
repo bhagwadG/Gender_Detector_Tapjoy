@@ -1,0 +1,20 @@
+== Welcome to Gender Detector app
+
+-- This is the Naive Bayes implementation of gender detection algorithm in Ruby on Rails.
+
+The logic is written in 'bayes.rb' file which can be found in the app root directory.
+
+References:
+
+http://en.wikipedia.org/wiki/Naive_Bayes_classifier
+
+Book followed: Ruby on Rails Tutorial Learn Rails by Example Michael Hartl.
+
+Note:
+
+It is important that the heights and weights are not given same values for all training examples,
+because that will lead the variance to be zero and generate NaN values for "Normal Distribution"
+calculation formula as given at wiki page.
+
+
+--Arun Shyam

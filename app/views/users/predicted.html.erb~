@@ -1,0 +1,2 @@
+
+<strong>Gender</strong> <%= @user.gender %><br />
