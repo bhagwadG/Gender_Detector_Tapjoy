@@ -33,12 +33,13 @@ class Bayes
     p_m_women = pos_prob(w_var_w,w_mean_w,h_var_w,h_mean_w,ht,wt)
     p_m_men   = pos_prob(w_var_m,w_mean_m,h_var_m,h_mean_m,ht,wt)
     
+    return arr_w_men,arr_h_men,arr_w_women ,arr_h_women 
     #comparison of probabilities for prediction
-     if p_m_men > p_m_women
-        return "Male"
-     else
-        return "Female"
-     end
+#     if p_m_men > p_m_women
+#        return "Male"
+#     else
+#        return "Female"
+#     end
   end  
   
 end
